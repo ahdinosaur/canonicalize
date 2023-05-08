@@ -14,7 +14,8 @@
     "coverage": "nyc npm test",
     "coveragehtml": "nyc report -r html",
     "precoveragehtml": "npm run coverage",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "benchmark": "node benchmark"
   },
   "repository": {
     "type": "git",
@@ -39,9 +40,19 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "semistandard": "*",
+    "benchmark": "^2.1.4",
     "jsonfile": "*",
-    "nyc": "*"
+    "nyc": "*",
+    "semistandard": "*",
+    "fast-json-stable-stringify": "latest",
+    "fast-safe-stringify": "latest",
+    "fast-stable-stringify": "latest",
+    "faster-stable-stringify": "latest",
+    "fastest-stable-stringify": "latest",
+    "json-stable-stringify": "latest",
+    "json-stringify-deterministic": "latest",
+    "json-stringify-safe": "latest",
+    "safe-stable-stringify": "latest"
   },
   "license": "Apache-2.0",
   "bugs": {
