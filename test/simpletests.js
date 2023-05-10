@@ -143,7 +143,7 @@ test('object with more than one property', t => {
 
 test('undefined', t => {
   const input = undefined;
-  const expected = 'null';
+  const expected = undefined;
   const actual = JSON.canonicalize(input);
   t.is(actual, expected);
 });
@@ -157,7 +157,7 @@ test('null', t => {
 
 test('symbol', t => {
   const input = Symbol('hello world');
-  const expected = 'null';
+  const expected = undefined;
   const actual = JSON.canonicalize(input);
   t.is(actual, expected);
 });
